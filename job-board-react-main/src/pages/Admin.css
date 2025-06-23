@@ -1,0 +1,92 @@
+.admin-panel {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.admin-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  color: #334155;
+}
+
+.admin-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.role {
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.role.admin {
+  background-color: #ecf2fa;
+  color: #1d4ed8;
+}
+
+.role.user {
+  background-color: #f8f2dd;
+  color: rgb(245, 46, 46);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promote {
+  background-color: #1e8aa4; /* green */
+  color: white;
+}
+
+.promote:hover {
+  background-color: #1e89a485;
+}
+
+.demote {
+  background-color: rgb(239, 186, 64); /* amber */
+  color: white;
+}
+
+.demote:hover {
+  background-color:rgba(239, 187, 64, 0.534);
+}
+
+.remove {
+  background-color: #ef4444; /* red */
+  color: white;
+}
+
+.remove:hover {
+  background-color: #dc2626ac;
+}

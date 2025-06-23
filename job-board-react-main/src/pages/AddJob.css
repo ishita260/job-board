@@ -1,0 +1,138 @@
+.add-job-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  background-color:white;
+  min-height: calc(100vh - 120px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 2%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.add-job-form {
+  background-color:  #d8e5f4b4;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f1f5f9;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color:  #1e8aa4;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color:  #1e8aa4;
+  color: white;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #1e89a493;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .add-job-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+/* Dark mode background */
+body.dark-theme .all-jobs-container {
+  background-color: #0f172a;
+}
+
+/* Dark mode title */
+body.dark-theme .all-jobs-title {
+  color: #f1f5f9;
+}
+
+/* Dark mode job card */
+body.dark-theme .job-card {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+/* Dark mode job detail texts */
+body.dark-theme .job-company,
+body.dark-theme .job-location,
+body.dark-theme .job-salary,
+body.dark-theme .job-description {
+  color: #cbd5e1;
+}
+
+/* Dark mode job title */
+body.dark-theme .job-title {
+  color: #f8fafc;
+}
+
+/* Dark mode apply button */
+body.dark-theme .apply-btn {
+  background-color: #0284c7;
+}
+
+body.dark-theme .apply-btn:hover {
+  background-color: #0369a1;
+}
+
+body.dark-theme .apply-btn.applied {
+  background-color: #475569;
+}
